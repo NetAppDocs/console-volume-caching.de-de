@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: get-started/cache-quick-start.html 
+keywords: how to get started with volume caching, volume caching quick start 
+summary: Beginnen Sie in wenigen Schritten mit dem Volume-Caching. 
+---
+= Schnellstart für Volume-Caching
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Hier finden Sie eine Übersicht über die Schritte, die für den Einstieg in das Volume-Caching erforderlich sind. Über die Links in den einzelnen Schritten gelangen Sie zu einer Seite mit weiteren Einzelheiten.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Eins"]Überprüfen der Voraussetzungen
+[role="quick-margin-para"]
+link:../get-started/cache-prerequisites.html["Stellen Sie sicher, dass Ihre Umgebung diese Anforderungen erfüllt"] .
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"]Volume-Caching einrichten
+[role="quick-margin-para"]
+link:../get-started/cache-setup.html["Einrichten des Volume-Cachings"] .
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Drei"]Wie geht es weiter?
+[role="quick-margin-para"]
+Folgendes könnten Sie als Nächstes tun.
+
+[role="quick-margin-list"]
+* link:../use/cache-create.html["Erstellen eines Caches"] .
+* link:../use/cache-use-overview.html["Verwalten eines Caches, Bearbeiten eines Caches, Ändern der Cache-Größe oder Löschen eines Caches"] .
+* link:../use/monitor-jobs.html["Überwachen von Volume-Caching-Vorgängen"] .
+

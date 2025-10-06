@@ -1,0 +1,42 @@
+---
+sidebar: sidebar 
+permalink: get-started/cache-setup.html 
+keywords: bluexp, volume caching, 
+summary: Um das Volume-Caching zu verwenden, führen Sie einige Schritte zur Einrichtung aus. 
+---
+= Volume-Caching einrichten
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Um das Volume-Caching zu verwenden, führen Sie einige Schritte zur Einrichtung aus.
+
+* Rezensionlink:../get-started/cache-prerequisites.html["Voraussetzungen"] um sicherzustellen, dass Ihre Umgebung bereit ist.
+* Erstellen Sie einen Konsolenagenten.
+* Erstellen Sie Systeme, die Volume-Caching unterstützen können.
+
+
+
+
+== Erstellen Sie einen Konsolenagenten in der NetApp Konsole
+
+Der nächste Schritt besteht darin, einen Konsolenagenten in der NetApp -Konsole zu erstellen.
+
+Informationen zum Erstellen eines Konsolenagenten vor der Verwendung des Volume-Caching finden Sie in der NetApp Konsolendokumentation. Dort wird beschrieben, https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#how-to-create-a-connector["So erstellen Sie einen Konsolenagenten"^] .
+
+
+
+== Systeme erstellen
+
+Falls noch nicht geschehen, müssen Sie die Systeme für Quelle und Ziel erstellen.
+
+* https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/start/task-getting-started-fsx.html["Erstellen Sie ein Amazon FSx für ONTAP -System"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html["Starten Sie Cloud Volumes ONTAP in AWS"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html["Starten Sie Cloud Volumes ONTAP in Azure"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-gcp.html["Starten Sie Cloud Volumes ONTAP in GCP"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-adding-systems.html["Hinzufügen vorhandener Cloud Volumes ONTAP -Systeme"^]
+* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Entdecken Sie ONTAP Cluster"^]
+

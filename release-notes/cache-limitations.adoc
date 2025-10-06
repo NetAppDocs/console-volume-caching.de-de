@@ -1,0 +1,51 @@
+---
+sidebar: sidebar 
+permalink: release-notes/cache-limitations.html 
+keywords: volume caching, bluexp 
+summary: Bekannte Einschränkungen identifizieren Plattformen, Geräte oder Funktionen, die von dieser Version des Dienstes nicht unterstützt werden oder nicht ordnungsgemäß mit ihm zusammenarbeiten. 
+---
+= Bekannte Einschränkungen des Volume-Cachings
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Bekannte Einschränkungen identifizieren Plattformen, Geräte oder Funktionen, die von dieser Version des Dienstes nicht unterstützt werden oder nicht ordnungsgemäß mit ihm zusammenarbeiten.
+
+
+
+== Einschränkung beim Kopieren von Cache-Exportrichtlinienregeln
+
+Die Cache-Exportrichtlinienregeln werden in den folgenden Situationen nicht auf das Cache-Volume kopiert:
+
+* Wenn das System des Quellvolumes Amazon FSx for NetApp ONTAP oder Cloud Volumes ONTAP ist und das Cache-Volume ONTAP 9.10.1 oder früher ist.
+* Wenn das System des Quellvolumes eine beliebige Version von ONTAP ist und das Cache-Volume ONTAP 9.10.1 oder früher ist.
+
+
+Problemumgehung: Sie sollten die Regeln für das Cache-Volume manuell erstellen.
+
+
+
+== Die Cache-Erstellung schlägt für Speicher-VMs mit demselben Namen fehl
+
+Wenn Quell- und Zielcluster Speicher-VMs mit demselben Namen verwenden, wird der Cache nicht erstellt.
+
+Problemumgehung: Verwenden Sie unterschiedliche Namen für die Quell- und Ziel-Speicher-VMs.
+
+
+
+== Verzögerung bei der Anzeige neuer oder kürzlich bearbeiteter Exportrichtlinien
+
+Beim Erstellen eines Caches können Sie eine kürzlich erstellte oder bearbeitete Exportrichtlinie möglicherweise nicht in der Liste sehen.
+
+Problemumgehung: Versuchen Sie es in einigen Minuten erneut.
+
+
+
+== Die Cache-Erstellung schlägt fehl, wenn für das Ziel nur das CIFS-Protokoll aktiviert ist
+
+Die Cache-Erstellung schlägt fehl, wenn der Quell- oder Zielcluster über ONTAP 9.10.1 oder früher verfügt und im Zielcluster nur das CIFS-Protokoll aktiviert ist.
+
+Problemumgehung: Verwenden Sie einen Zielcluster mit ONTAP 9.11.1 oder höher oder mit konfigurierten CIFS- und NFS-Protokollen.

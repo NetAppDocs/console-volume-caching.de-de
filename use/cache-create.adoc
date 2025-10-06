@@ -1,0 +1,112 @@
+---
+sidebar: sidebar 
+permalink: use/cache-create.html 
+keywords: volume caching, Volume caching 
+summary: Durch Volume-Caching wird ein dauerhaftes, beschreibbares Volume an einem entfernten Ort bereitgestellt.  Sie können Volume-Caching verwenden, um den Zugriff auf Daten zu beschleunigen oder den Datenverkehr von stark beanspruchten Volumes zu entlasten.  Cache-Volumes eignen sich ideal für leseintensive Workloads, insbesondere wenn Clients wiederholt auf dieselben Daten zugreifen müssen. 
+---
+= Erstellen eines Caches mithilfe des Volume-Cachings
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Durch Volume-Caching wird ein dauerhaftes, beschreibbares Volume an einem entfernten Ort bereitgestellt.  Sie können Volume-Caching verwenden, um den Zugriff auf Daten zu beschleunigen oder den Datenverkehr von stark beanspruchten Volumes zu entlasten.  Zwischengespeicherte Volumes eignen sich ideal für leseintensive Workloads, insbesondere wenn Clients wiederholt auf dieselben Daten zugreifen müssen.  Sie können Volume-Caching zwischen Amazon FSx for ONTAP, Cloud Volumes ONTAP und lokalem ONTAP mit einem oder mehreren Quellvolumes aus dem Quellsystem als Cache-Quelle erstellen.  Anschließend wählen Sie die Speicher-VM für die Cache-Volumes aus.
+
+Das zwischengespeicherte Volume kann sich auf demselben Cluster oder auf einem anderen Cluster als dem des Quellvolumes befinden.  Die Volumes, die Sie zum Zwischenspeichern auswählen, müssen zur selben Speicher-VM gehören und die Speicher-VMs müssen dieselben Protokolle verwenden.
+
+
+TIP: Wenn Volumes nicht für die Zwischenspeicherung infrage kommen, werden sie ausgegraut, sodass Sie sie nicht auswählen können.
+
+Sie können die Größe für zwischengespeicherte Volumes als Prozentsatz der Quellvolumegröße eingeben.
+
+
+NOTE: Der vom zwischengespeicherten Volume verwendete IPSpace hängt vom von der Quellspeicher-VM verwendeten IPSpace ab.
+
+Der Name des zwischengespeicherten Datenträgers verwendet das Suffix `pass:macros[_cache]` zum ursprünglichen Datenträgernamen hinzugefügt.
+
+
+
+== Schritte von der Zielseite zum Volume-Caching
+
+. Melden Sie sich bei der NetApp Konsole an.
+. Wählen Sie in der linken Navigation *Mobilität* > *Volume-Caching*.
++
+Sie gelangen auf die Dashboard-Seite zum Volume-Caching.  Wenn Sie die Volume-Caching-Option zum ersten Mal verwenden, müssen Sie die Cache-Informationen hinzufügen.  Später erscheint stattdessen das Dashboard und zeigt Daten zu den Caches an.
+
++
+
+NOTE: Wenn Sie noch keinen NetApp Konsolenagenten eingerichtet haben, wird anstelle von *Cache hinzufügen* die Option *Konsolenagent hinzufügen* angezeigt.  In diesem Fall müssen Sie zuerst den Konsolenagenten einrichten.  Weitere Informationen finden Sie im https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-standard-mode.html["NetApp -Konsole – Schnellstart"^] .
+
++
+image:landing-page.png["die Landingpage zum Volume-Caching"]
+
+. Wählen Sie *Cache hinzufügen*.
+. Wählen Sie auf der Seite „Cache-Daten“ den Quell- und Zielcache des Systems aus und wählen Sie „Caching-Assistent starten“ aus.
+. Wählen Sie auf der Seite „Caches konfigurieren“ das Volume bzw. die Volumes aus, die Sie zwischenspeichern möchten.
++
+
+NOTE: Sie können bis zu 50 Bände auswählen.
+
+. Scrollen Sie auf der Seite nach unten, um weitere Änderungen an den VM-Details oder der Volumegröße vorzunehmen.
+. Geben Sie die Größe für Cache-Volumes als Prozentsatz der Quellvolume-Größe ein.
++
+
+TIP: Als Faustregel gilt, dass die Größe des Cache-Volumes etwa 15 % der Größe des Quell-Volumes betragen sollte.
+
+. Aktivieren Sie das Kontrollkästchen *Cache-Zugriff*, um die NFS-Exportrichtlinienregeln und die SMB/CIFS-Freigabekonfiguration vom Quellvolume auf das Ziel-Cachevolume zu replizieren.
++
+Anschließend werden die NFS-Exportrichtlinienregeln und die SMB/CIFS-Freigabe im Quellvolume auf das Cachevolume repliziert.  Wenn das SMB/CIFS-Protokoll auf der Cache-Speicher-VM nicht aktiviert ist, wird die SMB/CIFS-Freigabe nicht repliziert.
+
+. Geben Sie optional das Präfix des Cachenamens ein.
++
+Das Suffix von `pass:macros[_cache]` wird im folgenden Format an den Namen angehängt: `<user-specified prefix>_<source volume name>_cache`
+
+. Wählen Sie *Caches erstellen*.
++
+Der neue Cache wird in der Caching-Liste angezeigt.  Der Name des Cache-Volumes wird angezeigt `pass:macros[_cache]` als Suffix zum Quelldatenträgernamen.
+
+. Um den Fortschritt des Vorgangs anzuzeigen, wählen Sie im NetApp -Konsolenmenü *Administration* > *Audit*.
+
+
+
+
+== Schritte auf der Seite „NetApp -Konsolensysteme“
+
+. Wählen Sie auf der Seite „NetApp -Konsolensysteme“ die Arbeitsumgebung aus.
+. Wählen Sie das Quellsystem aus und ziehen Sie es zum Ziel.image:drag-n-drop.png["Drag-and-Drop-Funktionalität zum Erstellen eines Cache"]
+. Wählen Sie *Volume-Caching*.
++
+Dadurch wird ein Cache-Volume von der Quelle zum Ziel erstellt.
+
+. Wählen Sie im rechten Bereich im Optionsfeld „Caching“ die Option „Hinzufügen“ aus.
+. Wählen Sie auf der Seite „Cache-Daten“ das System aus, das Sie zwischenspeichern möchten, und wählen Sie „Cache-Assistent starten“ aus.image:cache-data.png["Cache-Daten-Popup"]
+. Wählen Sie auf der Seite „Caches konfigurieren“ das Volume bzw. die Volumes aus, die Sie zwischenspeichern möchten.
++
+
+NOTE: Sie können bis zu 50 Bände auswählen.
+
+. Scrollen Sie auf der Seite nach unten, um weitere Änderungen an den VM-Details oder der Volumegröße vorzunehmen.
+. Geben Sie die Größe für Cache-Volumes als Prozentsatz der Quellvolume-Größe ein.
++
+
+TIP: Als Faustregel gilt, dass die Größe des Cache-Volumes etwa 15 % der Größe des Quell-Volumes betragen sollte.
+
++
+image:create-cache.png["Fenster zum Hinzufügen von Cache"]
+
+. Aktivieren Sie das Kontrollkästchen *Cache-Zugriff*, um die NFS-Exportrichtlinienregeln und die SMB/CIFS-Freigabekonfiguration vom Quellvolume auf das Ziel-Cachevolume zu replizieren.
++
+Anschließend werden die NFS-Exportrichtlinienregeln und die SMB/CIFS-Freigabe im Quellvolume auf das Cachevolume repliziert.  Wenn das SMB/CIFS-Protokoll auf der Cache-Speicher-VM nicht aktiviert ist, wird die SMB/CIFS-Freigabe nicht repliziert.
+
+. Geben Sie optional das Präfix des Cachenamens ein.
++
+Das Suffix von `pass:macros[_cache]` wird im folgenden Format an den Namen angehängt: `<user-specified prefix>_<source volume name>_cache`
+
+. Wählen Sie *Caches erstellen*.
++
+Der neue Cache wird in der Caching-Liste angezeigt.  Der Name des Cache-Volumes wird angezeigt `pass:macros[_cache]` als Suffix zum Quelldatenträgernamen.
+
+. Um den Fortschritt des Vorgangs anzuzeigen, wählen Sie im NetApp -Konsolenmenü *Administration* > *Audit*.
+

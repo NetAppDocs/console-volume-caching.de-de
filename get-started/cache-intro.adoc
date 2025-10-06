@@ -1,0 +1,85 @@
+---
+sidebar: sidebar 
+permalink: get-started/cache-intro.html 
+keywords: how volume caching works, what is volume caching, bluexp 
+summary: Durch Volume-Caching wird ein dauerhaftes, beschreibbares Volume an einem entfernten Ort bereitgestellt.  Sie können Volume-Caching verwenden, um den Zugriff auf Daten zu beschleunigen oder den Datenverkehr von stark beanspruchten Volumes zu entlasten.  Cache-Volumes eignen sich ideal für leseintensive Workloads, insbesondere wenn Clients wiederholt auf dieselben Daten zugreifen müssen. 
+---
+= Informationen zum Volume-Caching
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Volume-Caching, eine Funktion der ONTAP 9-Software, ist eine Remote-Caching-Funktion, die die Dateiverteilung vereinfacht, die WAN-Latenz reduziert, indem Ressourcen näher an den Standort Ihrer Benutzer und Rechenressourcen gebracht werden, und die WAN-Bandbreitenkosten senkt.  Durch Volume-Caching wird ein dauerhaftes, beschreibbares Volume an einem entfernten Ort bereitgestellt.  Sie können Volume-Caching verwenden, um den Zugriff auf Daten zu beschleunigen oder den Datenverkehr von stark beanspruchten Volumes zu entlasten.  Cache-Volumes eignen sich ideal für leseintensive Workloads, insbesondere wenn Clients wiederholt auf dieselben Daten zugreifen müssen.
+
+Mit Volume-Caching verfügen Sie über Caching-Funktionen für die Cloud, insbesondere für Amazon FSx for NetApp ONTAP, Cloud Volumes ONTAP und On-Premises als Arbeitsumgebung.
+
+Durch Volume-Caching wird Zweigstellen auch Zugriff auf Unternehmensdatensätze gewährt.  Durch die Bereitstellung von „Hot Data“, also Daten, auf die häufig von mehreren Controllern in einem Cluster zugegriffen werden muss, können Sie die Leistung wichtiger Anwendungen steigern.  Und indem Sie Hot Data lokal für Benutzer an mehreren Standorten auf der ganzen Welt zwischenspeichern, können Sie deren Zusammenarbeit verbessern, indem Sie den gleichzeitigen Zugriff auf zentralisierte Datensätze ermöglichen und gleichzeitig die Reaktionszeit beim Zugriff auf die Hot Data verkürzen.
+
+
+
+== NetApp Konsole
+
+Auf das Volume-Caching kann über die NetApp Konsole zugegriffen werden.
+
+Die NetApp Konsole ermöglicht eine zentrale Verwaltung von NetApp -Speicher- und Datendiensten in lokalen und Cloud-Umgebungen auf Unternehmensebene. Die Konsole ist für den Zugriff auf und die Nutzung der NetApp -Datendienste erforderlich. Als Verwaltungsschnittstelle ermöglicht es Ihnen, viele Speicherressourcen über eine Schnittstelle zu verwalten. Konsolenadministratoren können den Zugriff auf Speicher und Dienste für alle Systeme innerhalb des Unternehmens steuern.
+
+Sie benötigen weder eine Lizenz noch ein Abonnement, um die NetApp -Konsole zu verwenden. Es fallen nur dann Kosten an, wenn Sie Konsolenagenten in Ihrer Cloud bereitstellen müssen, um die Konnektivität zu Ihren Speichersystemen oder NetApp -Datendiensten sicherzustellen. Einige NetApp -Datendienste, auf die über die Konsole zugegriffen werden kann, sind jedoch lizenz- oder abonnementbasiert.
+
+Erfahren Sie mehr über die https://docs.netapp.com/us-en/bluexp-setup-admin/concept-overview.html["NetApp Konsole"] .
+
+
+
+== Was ist ein Cache?
+
+Ein Cache ist ein temporärer Speicherort, der sich zwischen einem Host und der Datenquelle befindet.  Das Ziel eines Caches besteht darin, häufig abgerufene Teile der Quelldaten so zu speichern, dass die Daten schneller bereitgestellt werden können, als wenn sie aus der Quelle abgerufen würden.  Caches sind in leseintensiven Umgebungen am nützlichsten, in denen auf Daten mehr als einmal zugegriffen wird und diese von mehreren Hosts gemeinsam genutzt werden.  Ein Cache-System ist schneller als das System mit Datenquelle, was durch ein schnelleres Speichersystem und die Nähe des Cache-Speicherplatzes zum Host erreicht wird.
+
+
+
+== Vorteile des Volume-Caching
+
+Volume-Caching bietet die folgenden Vorteile:
+
+* Beschleunigen Sie die Leistung in einer Hybrid-Cloud-Infrastruktur
+* Entfernen Sie Cloud-Silos, indem Sie Daten von einem Cloud-Anbieter zum anderen zwischenspeichern
+* Geringere Lagerkosten
+* Zusammenarbeit über geografische Standorte hinweg
+* Fähigkeit, sich schneller an veränderte IT-Umgebungen anzupassen
+* On-Demand- oder abonnementbasiertes Volume-Caching, gehostet in der Cloud
+
+
+
+
+== Was Sie mit Volume-Caching tun können
+
+Durch Volume-Caching können Sie verschiedene NetApp -Technologien umfassend nutzen, um die folgenden Ziele zu erreichen:
+
+* Zwischenspeichern von Daten von einem Cloud-Anbieter zu einem anderen
+* Anzeigen und Bearbeiten einer Cache-Exportrichtlinie
+* Ändern der Größe eines vorhandenen Caches
+* Löschen eines Caches
+
+
+
+
+== Kosten
+
+NetApp berechnet Ihnen keine Gebühren für das Volume-Caching, Sie müssen sich jedoch bei Ihrem Cloud-Anbieter über die anfallenden Gebühren für den Dateneingang und -ausgang informieren.
+
+
+
+== Lizenzierung
+
+Für das Volume-Caching sind keine speziellen ONTAP Lizenzen erforderlich.
+
+
+
+== So funktioniert das Volume-Caching
+
+Ein Cache-Volume ist ein dünn besiedeltes Volume, das von einem Quellvolume unterstützt wird.  Das Cache-Volume kann sich auf demselben Cluster wie das Quellvolume oder auf einem anderen Cluster befinden.
+
+Das Cache-Volume ermöglicht den Zugriff auf Daten im Quell-Volume, ohne dass sich alle Daten im Cache-Volume befinden müssen.  Die Datenspeicherung im Caching-Volume wird effizient verwaltet, indem nur die Hot Data (Arbeitsdaten oder kürzlich verwendete Daten) gespeichert werden.
+
+Beim Volume-Caching werden Leseanforderungen ausgeführt, wenn das Cache-Volume die vom Client angeforderten Daten enthält.  Andernfalls fordert der Volume-Caching-Dienst die Daten vom Quellvolume an und speichert die Daten, bevor er die Clientanforderung bedient.  Nachfolgende Anforderungen der Daten werden dann direkt aus dem Cache-Volume bedient.  Dies verbessert die Leistung, wenn wiederholt auf dieselben Daten zugegriffen wird, da die Daten nach der ersten Anforderung nicht mehr über das Netzwerk übertragen oder von einem überlasteten System bereitgestellt werden müssen.

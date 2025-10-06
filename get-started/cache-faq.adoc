@@ -1,0 +1,21 @@
+---
+sidebar: sidebar 
+permalink: get-started/cache-faq.html 
+keywords: volume caching faq, caching frequently asked questions 
+summary: Diese FAQ können hilfreich sein, wenn Sie nur schnell eine Antwort auf eine Frage suchen. 
+---
+= Häufig gestellte Fragen zum Volume-Caching
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Diese FAQ können hilfreich sein, wenn Sie nur schnell eine Antwort auf eine Frage suchen.
+
+*Wie lautet die URL zum Volume-Caching?*  Geben Sie als URL in einem Browser Folgendes ein: https://console.netapp.com/["https://console.netapp.com/"^] um auf die BlueXP Konsole zuzugreifen.
+
+*Benötigen Sie eine Lizenz, um Volume-Caching zu verwenden?* Eine NetApp -Lizenzdatei (NLF) ist nicht erforderlich.
+
+*Wie aktivieren Sie das Volume-Caching?*  Für das Volume-Caching ist keine Aktivierung erforderlich.  Die Volume-Caching-Option wird automatisch in der linken Navigation der NetApp Konsole angezeigt.

@@ -1,0 +1,22 @@
+---
+sidebar: sidebar 
+permalink: use/cache-use-overview.html 
+keywords: volume caching, volume caching 
+summary: Durch Volume-Caching wird ein dauerhaftes, beschreibbares Volume an einem entfernten Ort bereitgestellt.  Sie können Volume-Caching verwenden, um den Zugriff auf Daten zu beschleunigen oder den Datenverkehr von stark beanspruchten Volumes zu entlasten.  Cache-Volumes eignen sich ideal für leseintensive Workloads, insbesondere wenn Clients wiederholt auf dieselben Daten zugreifen müssen. 
+---
+= Übersicht über die Verwendung des Volume-Caching
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Mithilfe der Volume-Zwischenspeicherung können Sie die folgenden Ziele erreichen:
+
+* link:../use/cache-create.html["Erstellen eines Caches"] .
+* link:../use/cache-manage.html#view-cache-details["Cachedetails anzeigen"] .
+* link:../use/cache-manage.html#assign-a-different-cache-export-policy["Ändern der Exportrichtlinie und Ändern der Cachegröße"] .
+* link:../use/cache-manage.html#delete-a-volume-cache["Löschen eines Caches"] .
+* link:../use/monitor-jobs.html["Überwachen von Volume-Caching-Vorgängen"]auf der NetApp Console Audit-Seite.
+

@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: get-started/cache-prerequisites.html 
+keywords: what are volume caching requirements, volume caching prerequisites 
+summary: Beginnen Sie mit dem Volume-Caching, indem Sie die Unterstützung für Ihre Umgebung, Ihren Netzwerkzugriff, Ihre Anmeldung und Ihren Webbrowser überprüfen. 
+---
+= Voraussetzungen für das Volume-Caching
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Beginnen Sie, indem Sie die Bereitschaft Ihrer Betriebsumgebung, Anmeldung, Netzwerkzugriff und Ihres Webbrowsers überprüfen.
+
+Um Volume-Caching zu verwenden, sollten Sie sicherstellen, dass Ihre Umgebung alle Anforderungen erfüllt.
+
+* ONTAP 9.8 und höher
++
+** Cluster Admin ONTAP Berechtigungen
+** Intercluster-LIFs auf den Clustern
+
+
+* In der NetApp Konsole:
++
+** Der Konsolenagent muss in der NetApp -Konsole eingerichtet werden.  Alle Quell- und Zielcluster müssen sich auf demselben Konsolenagenten befinden. Weitere Informationen finden Sie im https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-standard-mode.html["BlueXP Schnellstart"^] Und https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["Erfahren Sie mehr über Konsolenagenten"^] .
+** Die Arbeitsumgebung sollte eingerichtet sein.
+** Die Cluster sollten in der Zielarbeitsumgebung und in einem eingeschalteten oder herabgestuften Zustand hinzugefügt werden.
+** Standardanforderungen für die NetApp Konsole. Siehe https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["NetApp -Konsolenanforderungen"^] .
+
+
+

@@ -1,0 +1,40 @@
+---
+indexpage:
+  lead: Durch Volume-Caching wird ein dauerhaftes, beschreibbares Volume an einem
+    entfernten Ort bereitgestellt.  Sie können Volume-Caching verwenden, um den Zugriff
+    auf Daten zu beschleunigen oder den Datenverkehr von stark beanspruchten Volumes
+    zu entlasten.  Cache-Volumes eignen sich ideal für leseintensive Workloads, insbesondere
+    wenn Clients wiederholt auf dieselben Daten zugreifen müssen.
+  tiles:
+  - title: Erste Schritte
+    links:
+    - title: Informationen zum Volume-Caching
+      url: "/get-started/cache-intro.html"
+    - title: Was ist neu beim Volume-Caching?
+      url: "/release-notes/cache-whats-new.html"
+    - title: Schnellstart
+      url: "/get-started/cache-quick-start.html"
+    - title: Voraussetzungen
+      url: "/get-started/cache-prerequisites.html"
+    - title: Zugriff auf die Volume-Caching-Option
+      url: "/get-started/cache-login.html"
+    - title: FAQ
+      url: "/get-started/cache-faq.html"
+  - title: Volume-Caching verwenden
+    links:
+    - title: Übersicht über die Verwendung des Volume-Caching
+      url: "/use/cache-use-overview.html"
+    - title: Erstellen eines Caches
+      url: "/use/cache-create.html"
+    - title: Verwalten eines Caches
+      url: "/use/cache-manage.html"
+    - title: Überwachen von Volume-Caching-Aufträgen
+      url: "/use/monitor-jobs.html"
+  - title: Blogs und Community
+    links:
+    - title: NetApp Konsole
+      url: https://www.netapp.com/console
+    - title: NetApp Datenservices
+      url: https://www.netapp.com/data-services/
+    - title: NetApp Community
+      url: https://community.netapp.com/
