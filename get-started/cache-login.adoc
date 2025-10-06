@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: get-started/cache-login.html 
 keywords: bluexp login, volume caching log in 
-summary: Beginnen Sie mit dem Volume-Caching, indem Sie in der NetApp Konsole auf den Dienst zugreifen. 
+summary: Beginnen Sie mit dem Volume-Caching, indem Sie in der NetApp Console auf den Dienst zugreifen. 
 ---
 = Zugriff auf Volume-Caching
 :hardbreaks:
@@ -12,14 +12,14 @@ summary: Beginnen Sie mit dem Volume-Caching, indem Sie in der NetApp Konsole au
 
 
 [role="lead"]
-Sie verwenden die NetApp -Konsole, um auf die Volume-Caching-Option zuzugreifen.
+Sie verwenden die NetApp Console , um auf die Volume-Caching-Option zuzugreifen.
 
-Um sich bei der NetApp Konsole anzumelden, können Sie Ihre Anmeldeinformationen für die NetApp Support-Site verwenden. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["Erfahren Sie mehr über die Anmeldung"^] .
+Um sich bei der NetApp Console anzumelden, können Sie Ihre Anmeldeinformationen für die NetApp Support-Site verwenden. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["Erfahren Sie mehr über die Anmeldung"^] .
 
 .Schritte
 . Öffnen Sie einen Webbrowser und gehen Sie zu https://console.netapp.com/["NetApp Konsole"^] .
 +
-Die Anmeldeseite der NetApp -Konsole wird angezeigt.
+Die Anmeldeseite der NetApp Console wird angezeigt.
 
 . Melden Sie sich bei der Konsole an.
 . Wählen Sie in der linken Navigationsleiste der Konsole *Mobilität* > *Volume-Caching* aus.

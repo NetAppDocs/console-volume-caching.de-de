@@ -22,12 +22,12 @@ Um Volume-Caching zu verwenden, sollten Sie sicherstellen, dass Ihre Umgebung al
 ** Intercluster-LIFs auf den Clustern
 
 
-* In der NetApp Konsole:
+* In der NetApp Console:
 +
-** Der Konsolenagent muss in der NetApp -Konsole eingerichtet werden.  Alle Quell- und Zielcluster müssen sich auf demselben Konsolenagenten befinden. Weitere Informationen finden Sie im https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-standard-mode.html["BlueXP Schnellstart"^] Und https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["Erfahren Sie mehr über Konsolenagenten"^] .
+** Der Konsolenagent muss in der NetApp Console eingerichtet werden.  Alle Quell- und Zielcluster müssen sich auf demselben Konsolenagenten befinden. Weitere Informationen finden Sie im https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-standard-mode.html["BlueXP Schnellstart"^] Und https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["Erfahren Sie mehr über Konsolenagenten"^] .
 ** Die Arbeitsumgebung sollte eingerichtet sein.
 ** Die Cluster sollten in der Zielarbeitsumgebung und in einem eingeschalteten oder herabgestuften Zustand hinzugefügt werden.
-** Standardanforderungen für die NetApp Konsole. Siehe https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["NetApp -Konsolenanforderungen"^] .
+** Standardanforderungen für die NetApp Console . Siehe https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["NetApp Console"^] .
 
 
 

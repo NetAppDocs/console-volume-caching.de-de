@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: use/monitor-jobs.html 
 keywords: volume caching, NetApp Volume caching 
-summary: Durch Volume-Caching wird ein dauerhaftes, beschreibbares Volume an einem entfernten Ort bereitgestellt.  Sie können NetApp Volume-Caching verwenden, um den Datenzugriff zu beschleunigen oder den Datenverkehr von stark beanspruchten Volumes zu entlasten.  Cache-Volumes eignen sich ideal für leseintensive Workloads, insbesondere wenn Clients wiederholt auf dieselben Daten zugreifen müssen. 
+summary: Durch Volume-Caching wird ein dauerhaftes, beschreibbares Volume an einem entfernten Ort bereitgestellt. Sie können NetApp Volume-Caching verwenden, um den Datenzugriff zu beschleunigen oder den Datenverkehr von stark beanspruchten Volumes zu entlasten. Cache-Volumes eignen sich ideal für leseintensive Workloads, insbesondere wenn Clients wiederholt auf dieselben Daten zugreifen müssen. 
 ---
 = Überwachen von Volume-Caching-Jobs auf der Seite „Audit“
 :hardbreaks:
@@ -12,10 +12,10 @@ summary: Durch Volume-Caching wird ein dauerhaftes, beschreibbares Volume an ein
 
 
 [role="lead"]
-Sie können alle Volume-Caching-Jobs überwachen und ihren Fortschritt mithilfe der Audit-Seite der NetApp Konsole ermitteln.
+Sie können alle Volume-Caching-Jobs überwachen und ihren Fortschritt mithilfe der Audit-Seite der NetApp Console ermitteln.
 
 .Schritte
-. Wählen Sie im NetApp -Konsolenmenü *Administration* > *Audit*.
+. Wählen Sie im NetApp Console *Administration* > *Audit*.
 . Filtern Sie optional nach Zeit, Dienst, Aktion, Agent, Ressource, Benutzer oder Status.
 . Erkunden Sie alle Caches und Vorgänge.
 

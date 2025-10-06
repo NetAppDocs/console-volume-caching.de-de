@@ -18,4 +18,4 @@ Diese FAQ können hilfreich sein, wenn Sie nur schnell eine Antwort auf eine Fra
 
 *Benötigen Sie eine Lizenz, um Volume-Caching zu verwenden?* Eine NetApp -Lizenzdatei (NLF) ist nicht erforderlich.
 
-*Wie aktivieren Sie das Volume-Caching?*  Für das Volume-Caching ist keine Aktivierung erforderlich.  Die Volume-Caching-Option wird automatisch in der linken Navigation der NetApp Konsole angezeigt.
+*Wie aktivieren Sie das Volume-Caching?*  Für das Volume-Caching ist keine Aktivierung erforderlich.  Die Volume-Caching-Option wird automatisch in der linken Navigation der NetApp Console angezeigt.

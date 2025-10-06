@@ -21,11 +21,11 @@ Um das Volume-Caching zu verwenden, führen Sie einige Schritte zur Einrichtung 
 
 
 
-== Erstellen Sie einen Konsolenagenten in der NetApp Konsole
+== Erstellen Sie einen Konsolenagenten in der NetApp Console
 
-Der nächste Schritt besteht darin, einen Konsolenagenten in der NetApp -Konsole zu erstellen.
+Der nächste Schritt besteht darin, einen Konsolenagenten in der NetApp Console zu erstellen.
 
-Informationen zum Erstellen eines Konsolenagenten vor der Verwendung des Volume-Caching finden Sie in der NetApp Konsolendokumentation. Dort wird beschrieben, https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#how-to-create-a-connector["So erstellen Sie einen Konsolenagenten"^] .
+Informationen zum Erstellen eines Konsolenagenten vor der Verwendung des Volume-Caching finden Sie in der NetApp Console Konsolendokumentation. Dort wird beschrieben, https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#how-to-create-a-connector["So erstellen Sie einen Konsolenagenten"^] .
 
 
 
