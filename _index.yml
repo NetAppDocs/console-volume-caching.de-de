@@ -1,5 +1,6 @@
 ---
 indexpage:
+  title: NetApp Volume-Caching
   lead: Durch Volume-Caching wird ein dauerhaftes, beschreibbares Volume an einem
     entfernten Ort bereitgestellt. Sie können Volume-Caching verwenden, um den Zugriff
     auf Daten zu beschleunigen oder den Datenverkehr von stark beanspruchten Volumes

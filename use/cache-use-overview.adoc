@@ -17,6 +17,5 @@ Mithilfe der Volume-Zwischenspeicherung können Sie die folgenden Ziele erreiche
 * link:../use/cache-create.html["Erstellen eines Caches"] .
 * link:../use/cache-manage.html#view-cache-details["Cachedetails anzeigen"] .
 * link:../use/cache-manage.html#assign-a-different-cache-export-policy["Ändern der Exportrichtlinie und Ändern der Cachegröße"] .
-* link:../use/cache-manage.html#delete-a-volume-cache["Löschen eines Caches"] .
 * link:../use/monitor-jobs.html["Überwachen von Volume-Caching-Vorgängen"]auf der NetApp Console Audit-Seite.
 
