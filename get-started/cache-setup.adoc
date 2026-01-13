@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: get-started/cache-setup.html 
-keywords: bluexp, volume caching, 
-summary: Um das Volume-Caching zu verwenden, führen Sie einige Schritte zur Einrichtung aus. 
+keywords: bluexp, Volume Caching, 
+summary: Um Volume Caching zu nutzen, müssen Sie einige Schritte zur Einrichtung durchführen. 
 ---
-= Volume-Caching einrichten
+= Volumen-Caching einrichten
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,11 +12,11 @@ summary: Um das Volume-Caching zu verwenden, führen Sie einige Schritte zur Ein
 
 
 [role="lead"]
-Um das Volume-Caching zu verwenden, führen Sie einige Schritte zur Einrichtung aus.
+Um Volume Caching zu nutzen, müssen Sie einige Schritte zur Einrichtung durchführen.
 
 * Rezensionlink:../get-started/cache-prerequisites.html["Voraussetzungen"] um sicherzustellen, dass Ihre Umgebung bereit ist.
 * Erstellen Sie einen Konsolenagenten.
-* Erstellen Sie Systeme, die Volume-Caching unterstützen können.
+* Systeme entwickeln, die Volume-Caching unterstützen.
 
 
 
@@ -25,7 +25,7 @@ Um das Volume-Caching zu verwenden, führen Sie einige Schritte zur Einrichtung 
 
 Der nächste Schritt besteht darin, einen Konsolenagenten in der NetApp Console zu erstellen.
 
-Informationen zum Erstellen eines Konsolenagenten vor der Verwendung des Volume-Caching finden Sie in der NetApp Console Konsolendokumentation. Dort wird beschrieben, https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#how-to-create-a-connector["So erstellen Sie einen Konsolenagenten"^] .
+Informationen zum Erstellen eines Console-Agenten vor der Verwendung von Volume-Caching finden Sie in der NetApp Console Dokumentation. https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#how-to-create-a-connector["So erstellen Sie einen Konsolenagenten"^]Die
 
 
 

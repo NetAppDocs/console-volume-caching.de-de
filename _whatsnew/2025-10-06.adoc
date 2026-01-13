@@ -1,12 +1,12 @@
-= BlueXP volume caching ist jetzt Volume-Caching
+= BlueXP Volume Caching heißt jetzt Volume Caching
 :allow-uri-read: 
 
 
 
 
-=== BlueXP volume caching ist jetzt Volume-Caching
+=== BlueXP Volume Caching heißt jetzt Volume Caching
 
-BlueXP volume caching wurde in Volume-Caching umbenannt.
+BlueXP Volume Caching wurde in Volume Caching umbenannt.
 
 Sie können über die linke Navigationsleiste der NetApp Console darauf zugreifen, indem Sie *Mobilität* > *Volume-Caching* auswählen.
 

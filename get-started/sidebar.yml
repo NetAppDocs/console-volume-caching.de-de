@@ -2,15 +2,15 @@
 section: get-started
 title: Erste Schritte
 entries:
-- title: Informationen zum Volume-Caching
+- title: Erfahren Sie mehr über Volume Caching.
   url: "/get-started/cache-intro.html"
 - title: Voraussetzungen
   url: "/get-started/cache-prerequisites.html"
 - title: Schnellstart
   url: "/get-started/cache-quick-start.html"
-- title: Volume-Caching einrichten
+- title: Volumen-Caching einrichten
   url: "/get-started/cache-setup.html"
-- title: Zugriff auf die Volume-Caching-Option
+- title: Greifen Sie auf die Option „Volume-Caching“ zu.
   url: "/get-started/cache-login.html"
 - title: FAQ
   url: "/get-started/cache-faq.html"

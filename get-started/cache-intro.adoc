@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: get-started/cache-intro.html 
-keywords: how volume caching works, what is volume caching, bluexp 
+keywords: how Volume Caching works, what is Volume Caching, bluexp 
 summary: Durch Volume-Caching wird ein dauerhaftes, beschreibbares Volume an einem entfernten Ort bereitgestellt. Sie können Volume-Caching verwenden, um den Zugriff auf Daten zu beschleunigen oder den Datenverkehr von stark beanspruchten Volumes zu entlasten. Cache-Volumes eignen sich ideal für leseintensive Workloads, insbesondere wenn Clients wiederholt auf dieselben Daten zugreifen müssen. 
 ---
-= Informationen zum Volume-Caching
+= Erfahren Sie mehr über Volume Caching.
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -14,7 +14,7 @@ summary: Durch Volume-Caching wird ein dauerhaftes, beschreibbares Volume an ein
 [role="lead"]
 Volume-Caching, eine Funktion der ONTAP 9-Software, ist eine Remote-Caching-Funktion, die die Dateiverteilung vereinfacht, die WAN-Latenz reduziert, indem Ressourcen näher an den Standort Ihrer Benutzer und Rechenressourcen gebracht werden, und die WAN-Bandbreitenkosten senkt. Durch Volume-Caching wird ein dauerhaftes, beschreibbares Volume an einem entfernten Ort bereitgestellt.  Sie können Volume-Caching verwenden, um den Zugriff auf Daten zu beschleunigen oder den Datenverkehr von stark beanspruchten Volumes zu entlasten. Cache-Volumes eignen sich ideal für leseintensive Workloads, insbesondere wenn Clients wiederholt auf dieselben Daten zugreifen müssen.
 
-Mit Volume-Caching verfügen Sie über Caching-Funktionen für die Cloud, insbesondere für Amazon FSx for NetApp ONTAP, Cloud Volumes ONTAP und On-Premises als Arbeitsumgebung.
+Mit Volume Caching stehen Ihnen Caching-Funktionen für die Cloud zur Verfügung, insbesondere für Amazon FSx for NetApp ONTAP, Cloud Volumes ONTAP und On-Premises-Arbeitsumgebungen.
 
 Durch Volume-Caching wird Zweigstellen auch Zugriff auf Unternehmensdatensätze gewährt.  Durch die Bereitstellung von „Hot Data“, also Daten, auf die häufig von mehreren Controllern in einem Cluster zugegriffen werden muss, können Sie die Leistung wichtiger Anwendungen steigern.  Und indem Sie Hot Data lokal für Benutzer an mehreren Standorten auf der ganzen Welt zwischenspeichern, können Sie deren Zusammenarbeit verbessern, indem Sie den gleichzeitigen Zugriff auf zentralisierte Datensätze ermöglichen und gleichzeitig die Reaktionszeit beim Zugriff auf die Hot Data verkürzen.
 
@@ -38,7 +38,7 @@ Ein Cache ist ein temporärer Speicherort, der sich zwischen einem Host und der 
 
 
 
-== Vorteile des Volume-Caching
+== Vorteile des Volumen-Cachings
 
 Volume-Caching bietet die folgenden Vorteile:
 
@@ -47,12 +47,12 @@ Volume-Caching bietet die folgenden Vorteile:
 * Geringere Lagerkosten
 * Zusammenarbeit über geografische Standorte hinweg
 * Fähigkeit, sich schneller an veränderte IT-Umgebungen anzupassen
-* On-Demand- oder abonnementbasiertes Volume-Caching, gehostet in der Cloud
+* Bedarfsorientiertes oder abonnementbasiertes Volumen-Caching in der Cloud
 
 
 
 
-== Was Sie mit Volume-Caching tun können
+== Was Sie mit Volume-Caching machen können
 
 Durch Volume-Caching können Sie verschiedene NetApp -Technologien umfassend nutzen, um die folgenden Ziele zu erreichen:
 
@@ -66,20 +66,20 @@ Durch Volume-Caching können Sie verschiedene NetApp -Technologien umfassend nut
 
 == Kosten
 
-NetApp berechnet Ihnen keine Gebühren für das Volume-Caching, Sie müssen sich jedoch bei Ihrem Cloud-Anbieter über die anfallenden Gebühren für den Dateneingang und -ausgang informieren.
+NetApp berechnet keine Gebühren für Volume Caching, Sie sollten sich jedoch bei Ihrem Cloud-Anbieter über anfallende Gebühren für den Datenverkehr (Ein- und Ausgang) informieren.
 
 
 
 == Lizenzierung
 
-Für das Volume-Caching sind keine speziellen ONTAP Lizenzen erforderlich.
+Für Volume Caching werden keine speziellen ONTAP Lizenzen benötigt.
 
 
 
-== So funktioniert das Volume-Caching
+== Wie Volume-Caching funktioniert
 
 Ein Cache-Volume ist ein dünn besiedeltes Volume, das von einem Quellvolume unterstützt wird.  Das Cache-Volume kann sich auf demselben Cluster wie das Quellvolume oder auf einem anderen Cluster befinden.
 
 Das Cache-Volume ermöglicht den Zugriff auf Daten im Quell-Volume, ohne dass sich alle Daten im Cache-Volume befinden müssen.  Die Datenspeicherung im Caching-Volume wird effizient verwaltet, indem nur die Hot Data (Arbeitsdaten oder kürzlich verwendete Daten) gespeichert werden.
 
-Beim Volume-Caching werden Leseanforderungen ausgeführt, wenn das Cache-Volume die vom Client angeforderten Daten enthält.  Andernfalls fordert der Volume-Caching-Dienst die Daten vom Quellvolume an und speichert die Daten, bevor er die Clientanforderung bedient.  Nachfolgende Anforderungen der Daten werden dann direkt aus dem Cache-Volume bedient.  Dies verbessert die Leistung, wenn wiederholt auf dieselben Daten zugegriffen wird, da die Daten nach der ersten Anforderung nicht mehr über das Netzwerk übertragen oder von einem überlasteten System bereitgestellt werden müssen.
+Volume-Caching liest Anfragen, wenn das Cache-Volume die vom Client angeforderten Daten enthält. Andernfalls fordert der Volume-Caching-Dienst die Daten vom Quellvolume an und speichert sie, bevor er die Clientanfrage bearbeitet. Nachfolgende Datenanfragen werden dann direkt aus dem Cache-Volume bedient. Dies verbessert die Leistung, wenn wiederholt auf dieselben Daten zugegriffen wird, da die Daten nach der ersten Anfrage nicht mehr über das Netzwerk übertragen oder von einem überlasteten System bereitgestellt werden müssen.

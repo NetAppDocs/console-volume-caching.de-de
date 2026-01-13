@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: use/cache-create.html 
-keywords: volume caching, Volume caching 
+keywords: Volume Caching, Volume caching 
 summary: Durch Volume-Caching wird ein dauerhaftes, beschreibbares Volume an einem entfernten Ort bereitgestellt. Sie können Volume-Caching verwenden, um den Zugriff auf Daten zu beschleunigen oder den Datenverkehr von stark beanspruchten Volumes zu entlasten. Cache-Volumes eignen sich ideal für leseintensive Workloads, insbesondere wenn Clients wiederholt auf dieselben Daten zugreifen müssen. 
 ---
-= Erstellen eines Caches mithilfe des Volume-Cachings
+= Erstellen Sie einen Cache mithilfe von Volume-Caching.
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,7 +12,7 @@ summary: Durch Volume-Caching wird ein dauerhaftes, beschreibbares Volume an ein
 
 
 [role="lead"]
-Durch Volume-Caching wird ein dauerhaftes, beschreibbares Volume an einem entfernten Ort bereitgestellt. Sie können Volume-Caching verwenden, um den Zugriff auf Daten zu beschleunigen oder den Datenverkehr von stark beanspruchten Volumes zu entlasten.  Zwischengespeicherte Volumes eignen sich ideal für leseintensive Workloads, insbesondere wenn Clients wiederholt auf dieselben Daten zugreifen müssen.  Sie können Volume-Caching zwischen Amazon FSx for ONTAP, Cloud Volumes ONTAP und lokalem ONTAP mit einem oder mehreren Quellvolumes aus dem Quellsystem als Cache-Quelle erstellen.  Anschließend wählen Sie die Speicher-VM für die Cache-Volumes aus.
+Volume-Caching stellt ein dauerhaftes, beschreibbares Volume an einem entfernten Ort bereit. Sie können Volume-Caching verwenden, um den Datenzugriff zu beschleunigen oder den Datenverkehr von stark frequentierten Volumes zu entlasten. Zwischengespeicherte Volumes eignen sich ideal für leseintensive Workloads, insbesondere wenn Clients wiederholt auf dieselben Daten zugreifen müssen. Sie können Volume-Caching zwischen Amazon FSx for ONTAP, Cloud Volumes ONTAP und On-Premises ONTAP mit einem oder mehreren Quellvolumes aus dem Quellsystem als Cache-Quelle erstellen. Anschließend wählen Sie die Speicher-VM für die Cache-Volumes aus.
 
 Das zwischengespeicherte Volume kann sich auf demselben Cluster oder auf einem anderen Cluster als dem des Quellvolumes befinden.  Die Volumes, die Sie zum Zwischenspeichern auswählen, müssen zur selben Speicher-VM gehören und die Speicher-VMs müssen dieselben Protokolle verwenden.
 
@@ -28,19 +28,19 @@ Der Name des zwischengespeicherten Datenträgers verwendet das Suffix `pass:macr
 
 
 
-== Schritte von der Zielseite zum Volume-Caching
+== Schritte von der Landingpage für Volume-Caching
 
 . Melden Sie sich bei der NetApp Console an.
 . Wählen Sie in der linken Navigation *Mobilität* > *Volume-Caching*.
 +
-Sie gelangen auf die Dashboard-Seite zum Volume-Caching.  Wenn Sie die Volume-Caching-Option zum ersten Mal verwenden, müssen Sie die Cache-Informationen hinzufügen.  Später erscheint stattdessen das Dashboard und zeigt Daten zu den Caches an.
+Sie gelangen auf die Seite „Volume Caching Dashboard“. Wenn Sie die Option „Volume-Caching“ zum ersten Mal verwenden, müssen Sie die Cache-Informationen hinzufügen. Anschließend erscheint das Dashboard und zeigt Daten über die Caches an.
 
 +
 
 NOTE: Wenn Sie noch keinen NetApp Console eingerichtet haben, wird anstelle von *Cache hinzufügen* die Option *Konsolenagent hinzufügen* angezeigt.  In diesem Fall müssen Sie zuerst den Konsolenagenten einrichten. Weitere Informationen finden Sie im https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-standard-mode.html["NetApp Console – Schnellstart"^] .
 
 +
-image:landing-page.png["die Landingpage zum Volume-Caching"]
+image:landing-page.png["die Landingpage für Volume Caching"]
 
 . Wählen Sie *Cache hinzufügen*.
 . Wählen Sie auf der Seite „Cache-Daten“ den Quell- und Zielcache des Systems aus und wählen Sie „Caching-Assistent starten“ aus.

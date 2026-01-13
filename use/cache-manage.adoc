@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: use/cache-manage.html 
-keywords: volume caching, Volume caching 
+keywords: Volume Caching, Volume caching 
 summary: Durch Volume-Caching wird ein dauerhaftes, beschreibbares Volume an einem entfernten Ort bereitgestellt. Sie können Volume-Caching verwenden, um den Zugriff auf Daten zu beschleunigen oder den Datenverkehr von stark beanspruchten Volumes zu entlasten. Cache-Volumes eignen sich ideal für leseintensive Workloads, insbesondere wenn Clients wiederholt auf dieselben Daten zugreifen müssen. 
 ---
 = Verwalten eines Caches
@@ -14,11 +14,11 @@ summary: Durch Volume-Caching wird ein dauerhaftes, beschreibbares Volume an ein
 [role="lead"]
 Sie können einen Cache bearbeiten, die Exportrichtlinie ändern, die Größe eines Caches ändern und einen Cache löschen.
 
-Mit Volume-Caching können Sie folgende Ziele erreichen:
+Mit Volume Caching können Sie folgende Ziele erreichen:
 
 * Cache-Details anzeigen.
 * Weisen Sie einem Cache eine andere Exportrichtlinie zu.
-* Bearbeiten Sie ein Volume-Caching und ändern Sie seine Größe usw. Beim Bearbeiten besteht die Möglichkeit, andere Eigenschaften anzuzeigen und zu ändern. In zukünftigen Versionen werden beim Bearbeiten weitere Eigenschaften hinzugefügt.
+* Bearbeiten Sie einen Volume-Caching-Prozess und ändern Sie dessen Größe usw. Der Bearbeitungsmodus bietet die Möglichkeit, weitere Eigenschaften anzuzeigen und zu ändern, und in zukünftigen Versionen werden weitere Eigenschaften hinzugefügt.
 * Ändern Sie die Größe eines vorhandenen Cache basierend auf einem Prozentsatz der ursprünglichen Volumegröße.
 * Löschen Sie einen Cache.
 
@@ -47,7 +47,7 @@ Sie können die Liste der auf dem Zielsystem erstellten Cache-Volumes anzeigen. 
 Sie können den Namen, die Volumegröße und die Exportrichtlinie für einen Cache ändern.
 
 .Schritte
-. Wählen Sie in der linken Navigation der NetApp Console *Mobilität* > *Volume-Caching*.
+. Wählen Sie in der linken Navigationsleiste der NetApp Console *Mobility* > *Volume Caching*.
 . Wählen Sie eine Zeile aus und wählen Sie rechts die Option *Aktionen …*.
 . Wählen Sie *Details anzeigen und bearbeiten*.
 . Ändern Sie auf der Registerkarte „Grundkonfiguration“ optional den Cachenamen und die Cachevolumegröße.
@@ -73,7 +73,7 @@ Die Regeln der Quellexportrichtlinie sollten auf den Zielcluster angewendet werd
 TIP: Sie können einem Cache eine vorhandene Exportrichtlinie zuweisen.  Sie können die Exportrichtlinienregeln nicht ändern.  Wenn Sie die Exportrichtlinien ändern müssen, können Sie NetApp System Manager verwenden.
 
 .Schritte
-. Wählen Sie in der linken Navigation der NetApp Console *Mobilität* > *Volume-Caching*.
+. Wählen Sie in der linken Navigationsleiste der NetApp Console *Mobility* > *Volume Caching*.
 . Wählen Sie eine Zeile aus und wählen Sie rechts die Option *Aktionen …*.
 . Wählen Sie *Exportrichtlinie ändern*.
 . Wählen Sie die Exportrichtlinie aus, die Sie dem Cache zuweisen möchten.
@@ -87,7 +87,7 @@ TIP: Sie können einem Cache eine vorhandene Exportrichtlinie zuweisen.  Sie kö
 Sie können die Größe des Cache-Volumes basierend auf einem Prozentsatz des Quellvolumes ändern.
 
 .Schritte
-. Wählen Sie in der linken Navigation der NetApp Console *Mobilität* > *Volume-Caching*.
+. Wählen Sie in der linken Navigationsleiste der NetApp Console *Mobility* > *Volume Caching*.
 . Wählen Sie eine Zeile aus und wählen Sie rechts die Option *Aktionen …*.
 . Wählen Sie *Größe ändern*.
 . Geben Sie einen neuen Prozentsatz der ursprünglichen Volumengröße ein.
@@ -101,10 +101,10 @@ Die Größe des Cache-Volumens wird auf den neuen Prozentsatz angepasst.
 
 == Löschen eines Caches
 
-Wenn Sie den Cache nicht mehr benötigen, können Sie ihn löschen.  Dadurch wird die Volume-Caching-Beziehung gelöscht und der Zielvolume-Cache gelöscht.
+Wenn Sie den Cache nicht mehr benötigen, können Sie ihn löschen. Dadurch wird die Volume-Caching-Beziehung gelöscht und der Ziel-Volume-Cache gelöscht.
 
 .Schritte
-. Wählen Sie in der linken Navigation der NetApp Console *Mobilität* > *Volume-Caching*.
+. Wählen Sie in der linken Navigationsleiste der NetApp Console *Mobility* > *Volume Caching*.
 . Wählen Sie eine Zeile aus und wählen Sie rechts die Option *Aktionen …*.
 . Wählen Sie *Löschen*.
 . Aktivieren Sie das Kontrollkästchen.
