@@ -28,6 +28,7 @@ Der Name des zwischengespeicherten Datenträgers verwendet das Suffix `pass:macr
 
 
 
+[[steps-from-the-volume-caching-landing-page]]
 == Schritte von der Landingpage für Volume-Caching
 
 . Melden Sie sich bei der NetApp Console an.
@@ -72,6 +73,7 @@ Der neue Cache wird in der Caching-Liste angezeigt.  Der Name des Cache-Volumes 
 
 
 
+[[steps-from-the-netapp-console-systems-page]]
 == Schritte auf der Seite „NetApp Console “
 
 . Wählen Sie auf der Seite „NetApp Console Konsolensysteme“ die Arbeitsumgebung aus.

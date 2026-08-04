@@ -25,6 +25,7 @@ Mit Volume Caching können Sie folgende Ziele erreichen:
 
 
 
+[[view-cache-details]]
 == Cachedetails anzeigen
 
 Für jeden Cache können Sie das ursprüngliche Volume, die Arbeitsumgebung, das Cache-Volume und mehr sehen.
@@ -42,6 +43,7 @@ Sie können die Liste der auf dem Zielsystem erstellten Cache-Volumes anzeigen. 
 
 
 
+[[edit-a-cache]]
 == Einen Cache bearbeiten
 
 Sie können den Namen, die Volumegröße und die Exportrichtlinie für einen Cache ändern.
@@ -63,6 +65,7 @@ Sie können den Namen, die Volumegröße und die Exportrichtlinie für einen Cac
 
 
 
+[[assign-a-different-cache-export-policy]]
 == Zuweisen einer anderen Cache-Exportrichtlinie
 
 Sie können einem Cache eine andere Exportrichtlinie zuweisen.
@@ -82,6 +85,7 @@ TIP: Sie können einem Cache eine vorhandene Exportrichtlinie zuweisen.  Sie kö
 
 
 
+[[resize-a-cache]]
 == Ändern der Cachegröße
 
 Sie können die Größe des Cache-Volumes basierend auf einem Prozentsatz des Quellvolumes ändern.
@@ -99,6 +103,7 @@ Die Größe des Cache-Volumens wird auf den neuen Prozentsatz angepasst.
 
 
 
+[[delete-a-cache]]
 == Löschen eines Caches
 
 Wenn Sie den Cache nicht mehr benötigen, können Sie ihn löschen. Dadurch wird die Volume-Caching-Beziehung gelöscht und der Ziel-Volume-Cache gelöscht.

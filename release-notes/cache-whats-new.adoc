@@ -16,10 +16,12 @@ Erfahren Sie mehr über die Neuerungen im Bereich Volume Caching.
 
 
 
+[[06-october-2025]]
 == 06. Oktober 2025
 
 
 
+[[bluexp-volume-caching-is-now-volume-caching]]
 === BlueXP Volume Caching heißt jetzt Volume Caching
 
 BlueXP Volume Caching wurde in Volume Caching umbenannt.
@@ -28,6 +30,7 @@ Sie können über die linke Navigationsleiste der NetApp Console darauf zugreife
 
 
 
+[[bluexp-is-now-netapp-console]]
 === BlueXP heißt jetzt NetApp Console
 
 Die NetApp Console basiert auf der verbesserten und neu strukturierten BlueXP -Grundlage und ermöglicht die zentrale Verwaltung von NetApp -Speicher und NetApp Data Services in On-Premises- und Cloud-Umgebungen auf Unternehmensniveau. Sie liefert Einblicke in Echtzeit, schnellere Arbeitsabläufe und eine vereinfachte Verwaltung mit hoher Sicherheit und Konformität.
@@ -36,10 +39,12 @@ Einzelheiten zu den Änderungen finden Sie imlink:https://docs.netapp.com/us-en/
 
 
 
+[[04-june-2023]]
 == 04. Juni 2023
 
 
 
+[[bluexp-volume-caching]]
 === BlueXP Volume-Caching
 
 BlueXP Volume Caching, eine Funktion der ONTAP 9-Software, ist eine Remote-Caching-Funktion, die die Dateiverteilung vereinfacht, die WAN-Latenz reduziert, indem Ressourcen näher an die Benutzer und Rechenressourcen gebracht werden, und die WAN-Bandbreitenkosten senkt. Volume-Caching stellt ein dauerhaftes, beschreibbares Volume an einem entfernten Ort bereit. Mit BlueXP Volume Caching können Sie den Datenzugriff beschleunigen oder den Datenverkehr von stark frequentierten Volumes entlasten. Cache-Volumes eignen sich ideal für leseintensive Workloads, insbesondere wenn Clients wiederholt auf dieselben Daten zugreifen müssen.

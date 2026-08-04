@@ -20,6 +20,7 @@ Durch Volume-Caching wird Zweigstellen auch Zugriff auf Unternehmensdatensätze 
 
 
 
+[[netapp-console]]
 == NetApp Console
 
 Auf das Volume-Caching kann über die NetApp Console zugegriffen werden.
@@ -28,16 +29,18 @@ Die NetApp Console ermöglicht eine zentrale Verwaltung von NetApp -Speicher- un
 
 Sie benötigen weder eine Lizenz noch ein Abonnement, um die NetApp Console zu verwenden. Es fallen nur dann Kosten an, wenn Sie Konsolenagenten in Ihrer Cloud bereitstellen müssen, um die Konnektivität zu Ihren Speichersystemen oder NetApp -Datendiensten sicherzustellen. Einige NetApp -Datendienste, auf die über die Konsole zugegriffen werden kann, sind jedoch lizenz- oder abonnementbasiert.
 
-Erfahren Sie mehr über die https://docs.netapp.com/us-en/bluexp-setup-admin/concept-overview.html["NetApp Console"] .
+Erfahren Sie mehr über das link:https://docs.netapp.com/us-en/console-setup-admin/concept-overview.html["NetApp Console"].
 
 
 
+[[what-is-a-cache]]
 == Was ist ein Cache?
 
 Ein Cache ist ein temporärer Speicherort, der sich zwischen einem Host und der Datenquelle befindet.  Das Ziel eines Caches besteht darin, häufig abgerufene Teile der Quelldaten so zu speichern, dass die Daten schneller bereitgestellt werden können, als wenn sie aus der Quelle abgerufen würden.  Caches sind in leseintensiven Umgebungen am nützlichsten, in denen auf Daten mehr als einmal zugegriffen wird und diese von mehreren Hosts gemeinsam genutzt werden.  Ein Cache-System ist schneller als das System mit Datenquelle, was durch ein schnelleres Speichersystem und die Nähe des Cache-Speicherplatzes zum Host erreicht wird.
 
 
 
+[[benefits-of-volume-caching]]
 == Vorteile des Volumen-Cachings
 
 Volume-Caching bietet die folgenden Vorteile:
@@ -52,6 +55,7 @@ Volume-Caching bietet die folgenden Vorteile:
 
 
 
+[[what-you-can-do-with-volume-caching]]
 == Was Sie mit Volume-Caching machen können
 
 Durch Volume-Caching können Sie verschiedene NetApp -Technologien umfassend nutzen, um die folgenden Ziele zu erreichen:
@@ -64,18 +68,21 @@ Durch Volume-Caching können Sie verschiedene NetApp -Technologien umfassend nut
 
 
 
+[[cost]]
 == Kosten
 
 NetApp berechnet keine Gebühren für Volume Caching, Sie sollten sich jedoch bei Ihrem Cloud-Anbieter über anfallende Gebühren für den Datenverkehr (Ein- und Ausgang) informieren.
 
 
 
+[[licensing]]
 == Lizenzierung
 
 Für Volume Caching werden keine speziellen ONTAP Lizenzen benötigt.
 
 
 
+[[how-volume-caching-works]]
 == Wie Volume-Caching funktioniert
 
 Ein Cache-Volume ist ein dünn besiedeltes Volume, das von einem Quellvolume unterstützt wird.  Das Cache-Volume kann sich auf demselben Cluster wie das Quellvolume oder auf einem anderen Cluster befinden.

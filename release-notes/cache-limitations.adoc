@@ -16,6 +16,7 @@ Bekannte Einschränkungen identifizieren Plattformen, Geräte oder Funktionen, d
 
 
 
+[[limitation-in-copying-cache-export-policy-rules]]
 == Einschränkung beim Kopieren von Cache-Exportrichtlinienregeln
 
 Die Cache-Exportrichtlinienregeln werden in den folgenden Situationen nicht auf das Cache-Volume kopiert:
@@ -28,6 +29,7 @@ Problemumgehung: Sie sollten die Regeln für das Cache-Volume manuell erstellen.
 
 
 
+[[cache-creation-fails-for-storage-vms-with-same-name]]
 == Die Cache-Erstellung schlägt für Speicher-VMs mit demselben Namen fehl
 
 Wenn Quell- und Zielcluster Speicher-VMs mit demselben Namen verwenden, wird der Cache nicht erstellt.
@@ -36,6 +38,7 @@ Problemumgehung: Verwenden Sie unterschiedliche Namen für die Quell- und Ziel-S
 
 
 
+[[delay-in-displaying-new-or-recently-edited-export-policies]]
 == Verzögerung bei der Anzeige neuer oder kürzlich bearbeiteter Exportrichtlinien
 
 Beim Erstellen eines Caches können Sie eine kürzlich erstellte oder bearbeitete Exportrichtlinie möglicherweise nicht in der Liste sehen.
@@ -44,6 +47,7 @@ Problemumgehung: Versuchen Sie es in einigen Minuten erneut.
 
 
 
+[[cache-creation-fails-when-destination-has-only-cifs-protocol-enabled]]
 == Die Cache-Erstellung schlägt fehl, wenn für das Ziel nur das CIFS-Protokoll aktiviert ist
 
 Die Cache-Erstellung schlägt fehl, wenn der Quell- oder Zielcluster über ONTAP 9.10.1 oder früher verfügt und im Zielcluster nur das CIFS-Protokoll aktiviert ist.
