@@ -4,7 +4,7 @@ permalink: use/monitor-jobs.html
 keywords: Volume Caching, NetApp Volume caching 
 summary: Durch Volume-Caching wird ein dauerhaftes, beschreibbares Volume an einem entfernten Ort bereitgestellt. Sie können NetApp Volume-Caching verwenden, um den Datenzugriff zu beschleunigen oder den Datenverkehr von stark beanspruchten Volumes zu entlasten. Cache-Volumes eignen sich ideal für leseintensive Workloads, insbesondere wenn Clients wiederholt auf dieselben Daten zugreifen müssen. 
 ---
-= Überwachen Sie Volumen-Caching-Aufträge auf der Audit-Seite
+= Überwachung von NetApp Volume Caching Aufträgen auf der Audit-Seite
 :hardbreaks:
 :allow-uri-read: 
 :icons: font

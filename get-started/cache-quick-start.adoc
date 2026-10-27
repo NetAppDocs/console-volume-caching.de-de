@@ -4,7 +4,7 @@ permalink: get-started/cache-quick-start.html
 keywords: how to get started with Volume Caching, Volume Caching quick start 
 summary: In wenigen Schritten zum Volume-Caching. 
 ---
-= Schnellstart für Volume-Caching
+= Schnellstart für NetApp Volume Caching
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -28,6 +28,6 @@ Folgendes könnten Sie als Nächstes tun.
 
 [role="quick-margin-list"]
 * link:../use/cache-create.html["Erstellen eines Caches"] .
-* link:../use/cache-use-overview.html["Verwalten eines Caches, Bearbeiten eines Caches, Ändern der Cache-Größe oder Löschen eines Caches"] .
+* link:../use/cache-manage.html["Verwalten eines Caches"].
 * link:../use/monitor-jobs.html["Monitor Volume Caching-Operationen"]Die
 

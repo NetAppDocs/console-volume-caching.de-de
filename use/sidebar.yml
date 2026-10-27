@@ -2,8 +2,6 @@
 section: use
 title: Volumen-Caching verwenden
 entries:
-- title: Übersicht zur Volumen-Caching-Nutzung
-  url: "/use/cache-use-overview.html"
 - title: Erstellen eines Caches
   url: "/use/cache-create.html"
 - title: Verwalten eines Caches

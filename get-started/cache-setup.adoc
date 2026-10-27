@@ -4,7 +4,7 @@ permalink: get-started/cache-setup.html
 keywords: bluexp, Volume Caching, 
 summary: Um Volume Caching zu nutzen, müssen Sie einige Schritte zur Einrichtung durchführen. 
 ---
-= Volumen-Caching einrichten
+= NetApp Volume Caching einrichten
 :hardbreaks:
 :allow-uri-read: 
 :icons: font

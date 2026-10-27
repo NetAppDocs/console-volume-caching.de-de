@@ -23,8 +23,6 @@ indexpage:
       url: "/get-started/cache-faq.html"
   - title: Volumen-Caching verwenden
     links:
-    - title: Volumen-Caching-Übersicht
-      url: "/use/cache-use-overview.html"
     - title: Erstellen eines Caches
       url: "/use/cache-create.html"
     - title: Verwalten eines Caches

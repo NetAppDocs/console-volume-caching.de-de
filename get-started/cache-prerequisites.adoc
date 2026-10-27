@@ -4,7 +4,7 @@ permalink: get-started/cache-prerequisites.html
 keywords: what are Volume Caching requirements, Volume Caching prerequisites 
 summary: Beginnen Sie mit dem Volume-Caching, indem Sie die Unterstützung für Ihre Umgebung, Ihren Netzwerkzugriff, Ihre Anmeldung und Ihren Webbrowser überprüfen. 
 ---
-= Voraussetzungen für das Volume-Caching
+= Voraussetzungen für NetApp Volume Caching
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -24,7 +24,7 @@ Um Volume Caching nutzen zu können, müssen Sie sicherstellen, dass Ihre Umgebu
 
 * In der NetApp Console:
 +
-** Der Console-Agent muss in der NetApp Console eingerichtet werden. Alle Quell- und Ziel-Cluster müssen sich auf demselben Console-Agent befinden. Siehe link:https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-standard-mode.html["Einstiegsarbeitsablauf für die NetApp Console"^] und link:https://docs.netapp.com/us-en/console-setup-admin/concept-agents.html["Erfahren Sie mehr über Konsolenagenten"^].
+** Die Einrichtung des Console Agent erfolgt in der NetApp Console. Alle Quell- und Zielcluster müssen denselben Console Agent verwenden. Informationen dazu enthalten link:https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-standard-mode.html["Einstiegsarbeitsablauf für die NetApp Console"^] und link:https://docs.netapp.com/us-en/console-setup-admin/concept-agents.html["Erfahren Sie mehr über Konsolenagenten"^].
 ** Die Arbeitsumgebung sollte eingerichtet sein.
 ** Die Cluster sollten in der Zielarbeitsumgebung und in einem eingeschalteten oder herabgestuften Zustand hinzugefügt werden.
 ** Standardanforderungen für die NetApp Console . Siehe https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["NetApp Console"^] .
